@@ -1,0 +1,54 @@
+.status {
+  position: fixed;
+  left: 50%;
+  min-width: 250px;
+  margin-left: -125px;
+  min-height: 80px;
+  margin-top: -40px;
+  bottom: 50%;
+  -webkit-animation: slideInOut 2.5s;
+  animation: slideInOut 2.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+.status.loss {
+  background-color: rgba(255, 147, 147, 0.95);
+  color: rgb(53, 0, 53);
+}
+
+.status.win {
+  color: rgba(255, 147, 147, 0.95);
+  background-color: rgb(53, 0, 53);
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes slideInOut {
+  0%,
+  100% {
+    bottom: 0%;
+    opacity: 0;
+  }
+  40%,
+  70% {
+    bottom: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInOut {
+  0%,
+  100% {
+    bottom: 0%;
+    opacity: 0;
+  }
+  40%,
+  70% {
+    bottom: 50%;
+    opacity: 1;
+  }
+}
