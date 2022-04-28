@@ -1,1 +1,3 @@
-https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card
+# [Memory!](https://timothycohen.github.io/memory/)
+
+Test your 🧠 memory with Ryan
